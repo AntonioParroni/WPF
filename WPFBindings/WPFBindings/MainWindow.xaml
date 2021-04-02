@@ -1,0 +1,162 @@
+﻿<Window x:Class="WPFBindings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFBindings"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="0.5*">
+            </RowDefinition>
+            <RowDefinition Height ="*">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0.5*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1" Grid.Column="1">
+              
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment ="Center" VerticalAlignment ="Center" Orientation ="Horizontal">
+                    <Label> Color: </Label>
+                    <Rectangle Width="75" Height="30">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="Yellow" Offset="0.0" />
+                                <GradientStop Color="Orange" Offset="0.5" />
+                                <GradientStop Color="Red" Offset="{Binding ElementName=Offset1,Path=Text}"  />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </StackPanel>
+
+                <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment ="Center" VerticalAlignment ="Center" Orientation ="Horizontal">
+                    <Label>Offset :</Label>
+                    <TextBox Margin="5" x:Name="Offset1">0.1</TextBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment ="Center" VerticalAlignment ="Center" Orientation ="Horizontal">
+                    <Label>Color:</Label>
+                    <Rectangle Width="75" Height="30">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush>
+                                <GradientStop Color="Yellow" Offset="0.0" />
+                                <GradientStop Color="Orange" Offset="0.5" />
+                                <!--<GradientStop Color="Red" Offset="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type TextBox} }, Path=Text }" />-->
+                                <GradientStop Color="Red" Offset="{Binding ElementName=Offset2,Path=Text}" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment ="Center" VerticalAlignment ="Center" Orientation ="Horizontal">
+                    <Label>Offset :</Label>
+                    <TextBox Margin="5" x:Name="Offset2" >0.5</TextBox>
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <!--<GroupBox Header="Langage Switcher"/>-->
+            <!--<TabControl>
+                <TabItem Header="Template" >
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                    </Grid>
+                    
+                </TabItem>
+                <TabItem Header="Russian"></TabItem>
+                <TabItem Header="Английский"></TabItem>
+            </TabControl>-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0">Template</Button>
+                    <Button Grid.Column="1">Russian</Button>
+                    <Button Grid.Column="2">Английский</Button>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Margin="10"  HorizontalAlignment="Right">Ru: </TextBlock>
+                            <TextBlock Margin="10"  HorizontalAlignment="Right">En: </TextBlock>
+                            <TextBlock Margin="10"  HorizontalAlignment="Right">Ru: </TextBlock>
+                            <TextBlock Margin="10"  HorizontalAlignment="Right">En: </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1">
+                            <TextBox Margin="9"  HorizontalAlignment="Left" Width="80" Text="{Binding ElementName=RussianText, Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <TextBox Margin="9"  HorizontalAlignment="Left" Width="80" Text="{Binding ElementName=EnglishText, Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <TextBox Margin="9"  HorizontalAlignment="Left" Width="80" Text="{Binding ElementName=RussianHeader, Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            <TextBox Margin="9"  HorizontalAlignment="Left" Width="80" Text="{Binding ElementName=EnglishHeader, Path=Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        </StackPanel>
+
+                    </Grid>
+
+                    <StackPanel Grid.Column="1">
+                        <Label HorizontalAlignment="Center">Текст</Label>
+                        <TextBox Margin="9"  HorizontalAlignment="Center" Width="80" x:Name="RussianText" ></TextBox>
+                        <Label HorizontalAlignment="Center">Заголовок 1</Label>
+                        <TextBox Margin="9"  HorizontalAlignment="Center" Width="80" x:Name="RussianHeader"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2">
+                        <Label HorizontalAlignment="Center">Text</Label>
+                        <TextBox Margin="9"  HorizontalAlignment="Center" Width="80" x:Name="EnglishText" ></TextBox>
+                        <Label HorizontalAlignment="Center">Header</Label>
+                        <TextBox Margin="9"  HorizontalAlignment="Center" Width="80" x:Name="EnglishHeader" ></TextBox>
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
