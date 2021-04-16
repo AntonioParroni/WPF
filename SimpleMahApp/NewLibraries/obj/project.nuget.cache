@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ky++PJMLLZppVT8oYW0XaAPD8JYTtYC7wCdNhTO5+nTYl0R/J35RWdfI/fCsgaGkVwvq4vxtjgmPMw046Fle4Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ray\\source\\repos\\NewLibraries\\NewLibraries\\NewLibraries.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ray\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\Ray\\.nuget\\packages\\mahapps.metro\\2.4.4\\mahapps.metro.2.4.4.nupkg.sha512",
+    "C:\\Users\\Ray\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\Ray\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
