@@ -1,0 +1,41 @@
+﻿    <!-- Реализовал все, кроме непосредственно самой привязки. Сложно, очень. Пробовал разными способами.
+    Не могу сам найти правильное решение. Не за такое короткое время и без практики.
+    Хотел бы посмотреть на решение!-->  
+    
+    <Window x:Class="WPF_Bindings2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Bindings2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:MainWindow/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <ListBox x:Name="ListBox1" MinHeight="200" SelectionChanged="ListBox1_SelectionChanged">
+            </ListBox>
+            <Button Content="Add" Click="Button_Click"></Button>
+            <Button Content="Remove" Click="Button_Click_1"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBox x:Name="FirstNameBox" MinHeight="50" 
+                     DataContext ="{Binding Path=CurrentStudent}" Text="{Binding Path=firstName}"></TextBox>
+            <TextBox x:Name="LastNameBox" MinHeight="50" 
+                     DataContext ="{Binding Path=CurrentStudent}" Text="{Binding Path=lastName}" ></TextBox>
+
+            <Button Content="Clear All"></Button>
+            <Button Content="Green Color"></Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "WPF Bindings2/1.0.0": {
+        "dependencies": {
+          "RandomNameGenerator": "1.0.4"
+        },
+        "runtime": {
+          "WPF Bindings2.dll": {}
+        }
+      },
+      "RandomNameGenerator/1.0.4": {
+        "runtime": {
+          "lib/RandomNameGenerator.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF Bindings2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RandomNameGenerator/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uol9L79Sh5CTvy2BCI8hRVYFF3AK6QQoBSCRCLz291Pt8UQPc1hndKKVTjDwKzf8Z16vze4v9//84DOlpEY2Gg==",
+      "path": "randomnamegenerator/1.0.4",
+      "hashPath": "randomnamegenerator.1.0.4.nupkg.sha512"
+    }
+  }
+}

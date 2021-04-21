@@ -1,0 +1,24 @@
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\WPF Bindings2.exe
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\WPF Bindings2.deps.json
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\WPF Bindings2.runtimeconfig.json
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\WPF Bindings2.runtimeconfig.dev.json
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\WPF Bindings2.dll
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\ref\WPF Bindings2.dll
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\WPF Bindings2.pdb
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.csprojAssemblyReference.cache
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2_MarkupCompile.cache
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2_MarkupCompile.lref
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.g.resources
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.AssemblyInfoInputs.cache
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.AssemblyInfo.cs
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.csproj.CoreCompileInputs.cache
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.dll
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\ref\WPF Bindings2.dll
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.pdb
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.genruntimeconfig.cache
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\bin\Debug\net5.0-windows\RandomNameGenerator.dll
+C:\Users\Ray\source\repos\WPF Bindings2\WPF Bindings2\obj\Debug\net5.0-windows\WPF Bindings2.csproj.CopyComplete
